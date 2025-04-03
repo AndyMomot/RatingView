@@ -5,7 +5,7 @@ struct RatingView: View {
     private let maxRate: Int
     private let color: Color
     
-    init(currentRate: Binding<Int>,
+    public init(currentRate: Binding<Int>,
          maxRate: Int = 5,
          color: Color = Color("yellowCustom", bundle: .module)) {
         self._currentRate = currentRate
