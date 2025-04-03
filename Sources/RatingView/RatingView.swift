@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct RatingView: View {
+struct RatingView: View {
     @Binding private var currentRate: Int
     private let maxRate: Int
     private let color: Color
@@ -35,17 +35,4 @@ public struct RatingView: View {
             }
         }
     }
-}
-
-struct RatingContentView: View {
-    @State private var rate = 0
-    
-    var body: some View {
-        RatingView(currentRate: $rate, maxRate: 5, color: .yellow)
-            .frame(maxWidth: 200)
-    }
-}
-
-#Preview {
-    RatingContentView()
 }
