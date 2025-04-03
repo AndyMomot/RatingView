@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct RatingView: View {
+public struct RatingView: View {
     @Binding private var currentRate: Int
     private let maxRate: Int
     private let color: Color
