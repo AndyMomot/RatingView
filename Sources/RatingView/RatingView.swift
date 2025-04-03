@@ -7,10 +7,10 @@ public struct RatingView: View {
     
     public init(currentRate: Binding<Int>,
          maxRate: Int = 5,
-         color: Color = Color("yellowCustom", bundle: .module)) {
+         color: Color? = nil) {
         self._currentRate = currentRate
         self.maxRate = maxRate > .zero ? maxRate : 1
-        self.color = color
+        self.color = color ?? Color("yellowCustom", bundle: .module)
     }
     
     public var body: some View {
