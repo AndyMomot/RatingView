@@ -8,8 +8,6 @@ To install this package, import 'https://github.com/AndyMomot/RatingView' in SPM
 
 '''swift
 
-import RatingView
-
 struct RatingContentView: View {
     @State private var rate = 0
     
