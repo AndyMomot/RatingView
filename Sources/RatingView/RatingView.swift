@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct RatingView: View {
+public struct RatingView: View {
     @Binding private var currentRate: Int
     private let maxRate: Int
     private let color: Color
@@ -13,7 +13,7 @@ struct RatingView: View {
         self.color = color
     }
     
-    var body: some View {
+    public var body: some View {
         HStack(spacing: .zero) {
             Spacer(minLength: 5)
             
